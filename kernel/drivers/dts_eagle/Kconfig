@@ -1,0 +1,6 @@
+config DTS_EAGLE
+	tristate "DTS Eagle driver"
+	depends on X86
+	default y if X86
+	help
+	  DTS Eagle module.

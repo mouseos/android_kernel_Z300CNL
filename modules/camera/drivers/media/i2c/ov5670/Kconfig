@@ -1,0 +1,12 @@
+#
+# Kconfig for sensor drivers
+#
+config VIDEO_OV5670
+       tristate "OVT ov5670 sensor support"
+       depends on I2C && VIDEO_V4L2
+       ---help---
+         This is a Video4Linux2 sensor-level driver for the OVT
+         OV5670 5M camera.
+
+
+         It currently only works with the atomisp driver.
